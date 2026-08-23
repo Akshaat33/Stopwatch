@@ -4,7 +4,7 @@ A simple and responsive stopwatch built using **HTML, CSS, and JavaScript**. The
 
 ## 🌐 Live Demo
 
-👉 [View Live Demo](YOUR_LIVE_DEMO_LINK_HERE)
+👉 [View Live Demo](https://stopwatch-mu-inky.vercel.app/)
 
 ## 📸 Preview
 
