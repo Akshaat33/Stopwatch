@@ -1,21 +1,25 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #0F0F12;
     font-family: sans-serif;
     color: white;
 }
-.start{
+
+.start {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.box{
+
+.box {
     border-top: 3px solid #8B5CF6;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     height: 800px;
@@ -23,27 +27,30 @@ body{
     background-color: #18181B;
     /* justify-content: center; */
     align-items: center;
-    border: 2px solid rgb(39,39,42);
+    border: 2px solid rgb(39, 39, 42);
     border-radius: 20px;
     padding: 30px 30px 0 30px;
 }
-.title{
+
+.title {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 50px;
     width: 90%;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(39,39,42);
+    border-bottom: 1px solid rgb(39, 39, 42);
 }
-#text{
-    font-size:medium;
+
+#text {
+    font-size: medium;
     font-weight: 200;
     letter-spacing: 2px;
     color: rgb(161, 161, 169);
     padding-bottom: 5px;
 }
-#active{
+
+#active {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,31 +63,38 @@ body{
     font-size: small;
     gap: 5px;
 }
-.activeanimation{
+
+.activeanimation {
     display: flex;
     align-items: center;
 }
-#idleanimation{
+
+#idleanimation {
     border-radius: 100%;
     background-color: rgb(63, 63, 70);
 }
-#pauseanimation{
+
+#pauseanimation {
     border-radius: 100%;
-    background-color: rgb(232,162,59);
+    background-color: rgb(232, 162, 59);
 }
-#runninganimation{
+
+#runninganimation {
     border-radius: 100%;
     animation: pulse 0.8s infinite alternate ease-in;
 }
-@keyframes pulse{
-    from{
-        background-color:#22C55E;
+
+@keyframes pulse {
+    from {
+        background-color: #22C55E;
     }
-    to{
-        background-color:#14532D;
+
+    to {
+        background-color: #14532D;
     }
 }
-.timedisplay{
+
+.timedisplay {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -89,50 +103,56 @@ body{
     height: 300px;
     /* padding-bottom: 90px; */
 }
-.timedisplaycirclea{
+
+.timedisplaycirclea {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
-    border: 1px solid rgb(39,39,42);
+    border: 1px solid rgb(39, 39, 42);
     border-radius: 100%;
     height: 100%;
     width: 300px;
 }
-.timedisplaycircleb{
+
+.timedisplaycircleb {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     border-radius: 100%;
-    border: 1px solid rgb(63,63,70);
-    box-shadow: 0 0 6px 0 rgb(63,63,70);
+    border: 1px solid rgb(63, 63, 70);
+    box-shadow: 0 0 6px 0 rgb(63, 63, 70);
     height: 95%;
     width: 280px;
 }
-.timedisplaycirclec{
+
+.timedisplaycirclec {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
-    border: 1px solid rgb(101,45,209);
+    border: 1px solid rgb(101, 45, 209);
     box-shadow: 0 0 6px 0 #8B5CF6;
     border-radius: 100%;
     height: 94%;
     width: 260px;
 }
-.time{
-    font-size:48px;
+
+.time {
+    font-size: 48px;
 }
-.workingbuttons{
-    color: rgb(92,92,93);
+
+.workingbuttons {
+    color: rgb(92, 92, 93);
     display: flex;
     margin-top: 10px;
-    border-bottom: 1px solid rgb(39,39,42);
-    border-top: 1px solid rgb(39,39,42);
+    border-bottom: 1px solid rgb(39, 39, 42);
+    border-top: 1px solid rgb(39, 39, 42);
     width: 90%;
     height: 100px;
     justify-content: space-around;
     align-items: center;
 }
-.but{
+
+.but {
     display: flex;
     border: 1px solid rgb(63, 63, 70);
     height: 70px;
@@ -141,37 +161,44 @@ body{
     justify-content: center;
     align-items: center;
 }
-.butactive{
+
+.butactive {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.butactive:hover{
-    background-color: rgb(38,38,36);
+
+.butactive:hover {
+    background-color: rgb(38, 38, 36);
 }
-.butactive:active{
+
+.butactive:active {
     transform: scale(0.9);
     background-color: rgb(53, 53, 54);
 }
-.laphistory{
+
+.laphistory {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    border-bottom: 1px solid rgb(39,39,42);
+    border-bottom: 1px solid rgb(39, 39, 42);
     width: 90%;
     height: 200px;
     overflow: scroll;
 }
-.laphistext{
+
+.laphistext {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.laphistextcontent{
+
+.laphistextcontent {
     color: rgb(82, 82, 90);
     font-size: small;
 }
-#nolaptext{
+
+#nolaptext {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +206,8 @@ body{
     width: 100%;
     height: 100%;
 }
-.lapcard{
+
+.lapcard {
     background-color: rgb(26, 26, 31);
     border-radius: 10px;
     width: 100%;
@@ -187,24 +215,29 @@ body{
     height: auto;
     border-left: 4px solid rgb(39, 39, 42);
 }
-.bestcard{
+
+.bestcard {
     border-left: 4px solid rgb(94, 194, 106);
 }
-.currentcard{
+
+.currentcard {
     border-left: 4px solid rgb(132, 94, 238);
     background-color: rgb(28, 26, 45);
 }
-.lapcardcontent{
+
+.lapcardcontent {
     display: flex;
     height: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
 }
-.ta{
+
+.ta {
     color: rgb(82, 82, 90);
 }
-.lapstats{
+
+.lapstats {
     display: flex;
     justify-content: space-between;
     height: 85px;
@@ -212,7 +245,8 @@ body{
     width: 90%;
     /* border: 1px solid rgb(39,39,42); */
 }
-.lapstatcard{
+
+.lapstatcard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,19 +254,181 @@ body{
     width: 200px;
     height: 70px;
     background-color: rgb(26, 26, 31);
-    border: 1px solid rgb(39,39,42);
+    border: 1px solid rgb(39, 39, 42);
     border-radius: 20px;
     gap: 5px;
 }
-#bl{
+
+#bl {
     color: #22C55E;
 }
-#tl{
+
+#tl {
     color: #8B5CF6;
 }
-.textlsc1{
-    color: rgb(92,92,93);
+
+.textlsc1 {
+    color: rgb(92, 92, 93);
     font-weight: 400;
     font-size: small;
 }
+
 /* ! Javascript css modification files now */
+
+@media (max-width: 768px) {
+    .start {
+        min-height: 100vh;
+        height: auto;
+        padding: 16px;
+    }
+    .box {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        padding: 24px 16px 20px;
+        border-radius: 16px;
+    }
+    .title,
+    .timedisplay,
+    .workingbuttons,
+    .laphistory,
+    .lapstats {
+        width: 100%;
+    }
+    .timedisplay {
+        height: 250px;
+    }
+    .timedisplaycirclea {
+        width: 230px;
+        height: 230px;
+    }
+    .timedisplaycircleb {
+        width: 214px;
+        height: 214px;
+    }
+    .timedisplaycirclec {
+        width: 198px;
+        height: 198px;
+    }
+    .time {
+        font-size: 36px;
+    }
+    .workingbuttons {
+        height: auto;
+        min-height: 90px;
+        gap: 10px;
+    }
+    .but {
+        width: 30%;
+        min-width: 90px;
+        height: 60px;
+        border-radius: 16px;
+    }
+    .buttontext {
+        font-size: 14px;
+    }
+    .emoji svg {
+        width: 20px;
+        height: 20px;
+    }
+    .laphistory {
+        height: 180px;
+    }
+    .lapstats {
+        gap: 8px;
+    }
+    .lapstatcard {
+        width: 33.33%;
+        height: 65px;
+        border-radius: 14px;
+    }
+    .textlsc1 {
+        font-size: 10px;
+    }
+    .textlsc2 {
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .start {
+        padding: 8px;
+    }
+    .container {
+        padding: 20px 12px 16px;
+        border-radius: 14px;
+    }
+    #text {
+        font-size: 13px;
+    }
+    #active {
+        width: 105px;
+    }
+    .timedisplay {
+        height: 210px;
+        margin-top: 6px;
+    }
+    .timedisplaycirclea {
+        width: 195px;
+        height: 195px;
+    }
+    .timedisplaycircleb {
+        width: 181px;
+        height: 181px;
+    }
+    .timedisplaycirclec {
+        width: 167px;
+        height: 167px;
+    }
+    .time {
+        font-size: 27px;
+    }
+    .workingbuttons {
+        gap: 6px;
+        margin-top: 6px;
+    }
+    .but {
+        min-width: 0;
+        width: 33.33%;
+        height: 55px;
+        border-radius: 14px;
+        gap: 4px;
+    }
+    .emoji svg {
+        width: 18px;
+        height: 18px;
+    }
+    .buttontext {
+        font-size: 12px;
+    }
+    .laphistory {
+        height: 160px;
+    }
+    .laphistextcontent {
+        font-size: 10px;
+    }
+    .lapcard {
+        min-height: 45px;
+    }
+    .lapcardcontent {
+        padding: 0 8px;
+        font-size: 12px;
+    }
+    .lapstats {
+        height: 70px;
+        gap: 5px;
+    }
+    .lapstatcard {
+        height: 58px;
+        border-radius: 12px;
+        gap: 2px;
+    }
+    .textlsc1 {
+        font-size: 8px;
+    }
+    .textlsc2 {
+        font-size: 10px;
+    }
+}
