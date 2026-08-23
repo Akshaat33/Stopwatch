@@ -8,7 +8,7 @@ A simple and responsive stopwatch built using **HTML, CSS, and JavaScript**. The
 
 ## 📸 Preview
 
-![Stopwatch Preview](./preview.png)
+![Stopwatch Preview](screenshot/Stopwatch--ss1.png)
 
 ## ✨ Features
 
