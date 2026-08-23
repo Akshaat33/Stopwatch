@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #0F0F12;
+    font-family: sans-serif;
+    color: white;
+}
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    border-top: 3px solid #8B5CF6;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 700px;
+    background-color: #18181B;
+    /* justify-content: center; */
+    align-items: center;
+    border: 2px solid rgb(39,39,42);
+    border-radius: 20px;
+    padding: 30px 30px 0 30px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    width: 90%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(39,39,42);
+}
+#text{
+    font-size:medium;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: rgb(161, 161, 169);
+    padding-bottom: 5px;
+}
+#active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8B5CF6;
+    border-radius: 20px;
+    width: 120px;
+    height: 80%;
+    font-weight: 200;
+    color: rgb(161, 161, 169);
+    font-size: small;
+    gap: 5px;
+}
+.activeanimation{
+    display: flex;
+    align-items: center;
+}
+#idleanimation{
+    border-radius: 100%;
+    background-color: rgb(63, 63, 70);
+}
+#pauseanimation{
+    border-radius: 100%;
+    background-color: rgb(232,162,59);
+}
+#runninganimation{
+    border-radius: 100%;
+    animation: pulse 0.8s infinite alternate ease-in;
+}
+@keyframes pulse{
+    from{
+        background-color:#22C55E;
+    }
+    to{
+        background-color:#14532D;
+    }
+}
+.timedisplay{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* border: 1px solid rgb(39,39,42); */
+    width: 90%;
+    height: 300px;
+    /* padding-bottom: 90px; */
+}
+.timedisplaycirclea{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border: 1px solid rgb(39,39,42);
+    border-radius: 100%;
+    height: 100%;
+    width: 300px;
+}
+.timedisplaycircleb{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid rgb(63,63,70);
+    box-shadow: 0 0 6px 0 rgb(63,63,70);
+    height: 95%;
+    width: 280px;
+}
+.timedisplaycirclec{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border: 1px solid rgb(101,45,209);
+    box-shadow: 0 0 6px 0 #8B5CF6;
+    border-radius: 100%;
+    height: 94%;
+    width: 260px;
+}
+.time{
+    font-size:48px;
+}
+.workingbuttons{
+    color: rgb(92,92,93);
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(39,39,42);
+    border-top: 1px solid rgb(39,39,42);
+    width: 90%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.but{
+    display: flex;
+    border: 1px solid rgb(63, 63, 70);
+    height: 70px;
+    width: 150px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.butactive{
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.butactive:hover{
+    background-color: rgb(38,38,36);
+}
+.butactive:active{
+    transform: scale(0.9);
+    background-color: rgb(53, 53, 54);
+}
+.laphistory{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(39,39,42);
+    width: 90%;
+    height: 200px;
+    overflow: scroll;
+}
+.laphistext{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.laphistextcontent{
+    color: rgb(82, 82, 90);
+    font-size: small;
+}
+#nolaptext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(63, 63, 70);
+    width: 100%;
+    height: 100%;
+}
+.lapcard{
+    background-color: rgb(26, 26, 31);
+    border-radius: 10px;
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+    border-left: 4px solid rgb(39, 39, 42);
+}
+.bestcard{
+    border-left: 4px solid rgb(94, 194, 106);
+}
+.currentcard{
+    border-left: 4px solid rgb(132, 94, 238);
+    background-color: rgb(28, 26, 45);
+}
+.lapcardcontent{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.ta{
+    color: rgb(82, 82, 90);
+}
+.lapstats{
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    margin-top: 10px;
+    width: 90%;
+    /* border: 1px solid rgb(39,39,42); */
+}
+.lapstatcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 70px;
+    background-color: rgb(26, 26, 31);
+    border: 1px solid rgb(39,39,42);
+    border-radius: 20px;
+    gap: 5px;
+}
+#bl{
+    color: #22C55E;
+}
+#tl{
+    color: #8B5CF6;
+}
+.textlsc1{
+    color: rgb(92,92,93);
+    font-weight: 400;
+    font-size: small;
+}
+/* ! Javascript css modification files now */
